@@ -1,4 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>this is fucking index html: {{ current_user }} .</h1>
+    <h1>this is before if: {{ is_whore }} .</h1>
+
+    {% if is_whore %}
+        <h1><this></this> is index: {{ user }} .</h1>
+    {% else %}
+            <h1>welcome moron</h1>
+    {% endif %}
 {% endblock %}
